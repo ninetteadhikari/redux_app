@@ -1,11 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
 export const getStarWarsData = () => dispatch => {
-  axios.get('https://swapi.co/api/people').then(response =>
+  axios.get("https://swapi.co/api/people").then(res =>
     dispatch({
-        // type is the name of the function to be used in the Reducer
-      type: 'GET_STARWARS',
-      payload: response.data
+      type: "GET_STARWARS",
+      payload: res.data
     })
   );
 };

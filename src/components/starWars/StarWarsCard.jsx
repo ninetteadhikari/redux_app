@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const StarWarsCard = props => {
   console.log('card', props);
   return (
-    <div>
+    <div className="starWarsCard">
       {props.data &&
         props.data.map(e => {
           return (

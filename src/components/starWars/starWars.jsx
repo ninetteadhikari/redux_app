@@ -10,7 +10,7 @@ class starWars extends Component {
   render() {
     // console.log(this.props);
     return (
-      <div>
+      <div >
         <h1>starwars component</h1>
         <h1>Number of Star Wars characters: {this.props.count}</h1>
         <StarWarsCard/>

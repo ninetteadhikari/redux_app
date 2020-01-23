@@ -3,6 +3,7 @@ import "./App.css";
 import { Provider } from "react-redux";
 import store from "./store";
 import StarWars from './components/starWars/starWars'
+import Weather from "./components/weather/weather"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <h1>redux</h1>
       <StarWars/>
+      <Weather/>
       </div>
     </Provider>
   );
